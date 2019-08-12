@@ -1,8 +1,8 @@
 class CreateCreditCards < ActiveRecord::Migration[5.2]
     def change
         create_table :credit_cards do |t|
-            t.integer :truncated_num, null: false
-            t.date :expiration_date, null: false
+            t.integer :card_number, null: false
+            t.string :expiration_date, null: false
             t.string :titular_name, null: false
             t.string :billing_address, null: false
 

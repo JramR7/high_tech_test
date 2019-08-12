@@ -2,14 +2,12 @@ class UsersController < ApplicationController
     # Use Knock to make sure the current_user is authenticated 
     #before completing request.
     before_action :authenticate_user,  only: [:show_current,  
-                                              :update]
+                                              :update_current]
     before_action :authorize_as_admin, only: [:index, :show, :update]
-    before_action :authorize,          only: [:update]
     
-    # Should work if the current_user is admin.
     def index
         @users = User.all
-        render json: @users
+        render json: @users, status: :ok
     end
     
     def show
@@ -17,20 +15,35 @@ class UsersController < ApplicationController
         render json: @user, status: :ok
     end
 
-    # Call this method to check if the user is logged-in.
-    # If the user is logged-in we will return the user's information.
     def show_current
-        @current = User.find(current_user.id)
-        render json: @current, status: :ok
+        render json: current_user, status: :ok
     end
     
     def create
         @user = User.new(user_params)   
-   
+
         if @user.save
-            render json: @user, status: :ok
+            render json: @user, status: :ok  
         else
             render json: @user.errors, status: :unprocessable_entity
+        end
+    end
+
+    def update
+        @user = User.find(params[:id])
+   
+        if @user.update(user_params)
+            render json: @user, status: :ok  
+        else
+            render json: @user.errors, status: :unprocessable_entity
+        end
+    end
+
+    def update_current       
+        if current_user.update(user_params)
+            render json: current_user, status: :ok  
+        else
+            render json: current_user.errors, status: :unprocessable_entity
         end
     end
 
@@ -45,12 +58,5 @@ class UsersController < ApplicationController
                                      :password_confirmation, 
                                      :role, 
                                      :location_id)
-    end
-    
-    # Adding a method to check if current_user can update itself. 
-    # This uses our UserModel method.
-    def authorize
-        render status: :unauthorized unless (current_user && 
-            current_user.can_modify_user?(params[:id]))
     end
 end

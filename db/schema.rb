@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(version: 2019_08_09_045711) do
   end
 
   create_table "credit_cards", force: :cascade do |t|
-    t.integer "truncated_num", null: false
-    t.date "expiration_date", null: false
+    t.integer "card_number", null: false
+    t.string "expiration_date", null: false
     t.string "titular_name", null: false
     t.string "billing_address", null: false
     t.integer "user_id"

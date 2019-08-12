@@ -14,18 +14,33 @@ This app will allow the users to register their data, add credit cards, edit and
 ## Features
 This API allows the caller to:
 
-User features:
-[x] Register users.
-[ ] Add credit cards for a user.
-[ ] Edit own data.
-[x] See own data.
+[x] Register users/admins.
+[x] Get own token.
 [x] Authenticate and identify own profile/role.
 
-Admin features:
-[x] See all users data.
-[ ] Edit all users data.
-[x] Authenticate and identify role.
+User features:
 
+[x] Show own user.
+[x] Update own user.
+[x] Add credit cards for own user.
+[x] Show own credit cards.
+[x] Show a single own credit card.
+[x] Update own credit card.
+[x] Delete own credit card.
+
+Admin features:
+
+[x] Show all users.
+[x] Show any user.
+[x] Update any user.
+[x] Show all credit cards.
+[x] Show any credit card.
+[x] Update any credit card.
+
+Aditional features:
+
+[x] Show all locations.
+[x] Show all banks.
 ## Technologies
 This project is created with:
 
@@ -38,13 +53,8 @@ For more information about dependencies, please go to the Gemfile
 ## Setup
 * To setup this project you need to have installed ruby2.3.5, and run the command 'bundle install'
 * Run the migrations with the command "rails db:migrate"
+* Run the seeder with the command "rails db:setup"
 * To start the rails server locally, run the command "rails server"
-
-## Tests
-To run the unit test you can either run all tests, or a specific test:
-
-* Running all tests: run command "rails test"
-* Running a specifiic test: run command "rails test -b test/controllers/specificTest.rb", where specificTest can be one of the following:
 
 ## API calls
 If you want more information about how to call the API, this is the postman repository:
