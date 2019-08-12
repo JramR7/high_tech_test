@@ -6,7 +6,7 @@ API to do registration, edition and consultation of users with their related cre
 * [Features](#features)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Tests](#tests)
+* [API calls](#apicalls)
 
 ## Introduction
 This app will allow the users to register their data, add credit cards, edit and see their own data. Aditionally, the API has an administrator role, which can consult and edit the data of every single user.
