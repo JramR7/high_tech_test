@@ -1,5 +1,6 @@
 # User-CreditCard API
 API to do registration, edition and consultation of users with their related credit cards.
+The url for this project can be found at: http://34.66.204.216:3000/ please reffer to the API calls for more information.
 
 ## Table of contents
 * [Introduction](#introduction)
