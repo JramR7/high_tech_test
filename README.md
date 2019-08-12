@@ -6,7 +6,7 @@ API to do registration, edition and consultation of users with their related cre
 * [Features](#features)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [API calls](#apicalls)
+* [API calls](#api-calls)
 
 ## Introduction
 This app will allow the users to register their data, add credit cards, edit and see their own data. Aditionally, the API has an administrator role, which can consult and edit the data of every single user.
@@ -50,6 +50,7 @@ For more information about dependencies, please go to the Gemfile
 
 ## Setup
 * To setup this project you need to have installed ruby2.3.5, and run the command 'bundle install'
+* Please be sure that you have the dev lib for the database (sqlite3 dev lib)
 * Run the migrations with the command "rails db:migrate"
 * Run the seeder with the command "rails db:setup"
 * To start the rails server locally, run the command "rails server"
