@@ -1,7 +1,30 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# Seeds for location
+Location.create(country_code: "93", country: "Afghanistan", city: "Kabul")
+Location.create(country_code: "880", country: "Bangladesh", city: "Dhaka")
+Location.create(country_code: "57", country: "Colombia", city: "Bogota")
+Location.create(country_code: "57", country: "Colombia", city: "Armenia")
+Location.create(country_code: "57", country: "Colombia", city: "Cali")
+Location.create(country_code: "57", country: "Colombia", city: "Pereira")
+Location.create(country_code: "57", country: "Colombia", city: "Manizales")
+Location.create(country_code: "57", country: "Colombia", city: "Tunja")
+Location.create(country_code: "57", country: "Colombia", city: "Pasto")
+Location.create(country_code: "57", country: "Colombia", city: "Barranquilla")
+Location.create(country_code: "57", country: "Colombia", city: "Bucaramanga")
+Location.create(country_code: "57", country: "Colombia", city: "Cartagena")
+Location.create(country_code: "57", country: "Colombia", city: "San Andres")
+Location.create(country_code: "57", country: "Colombia", city: "Medellin")
+Location.create(country_code: "57", country: "Colombia", city: "Neiva")
+Location.create(country_code: "57", country: "Colombia", city: "Santa Marta")
+Location.create(country_code: "57", country: "Colombia", city: "Ibague")
+
+# Seeds for banks
+Bank.create(name: "Banco de Bogota")
+Bank.create(name: "Bancolombia")
+Bank.create(name: "Banco Davivienda")
+Bank.create(name: "Banco de Occidente")
+Bank.create(name: "BBVA")
+Bank.create(name: "Banco Popular")
+Bank.create(name: "Citibank")
+Bank.create(name: "Banco Colpatria")
+Bank.create(name: "Banco Itau")
+Bank.create(name: "Banco GNB Sudameris")
