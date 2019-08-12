@@ -14,33 +14,31 @@ This app will allow the users to register their data, add credit cards, edit and
 ## Features
 This API allows the caller to:
 
-[x] Register users/admins.
-[x] Get own token.
-[x] Authenticate and identify own profile/role.
+- [x] Register users/admins.
+- [x] Get own token.
+- [x] Authenticate and identify own profile/role.
 
 User features:
-
-[x] Show own user.
-[x] Update own user.
-[x] Add credit cards for own user.
-[x] Show own credit cards.
-[x] Show a single own credit card.
-[x] Update own credit card.
-[x] Delete own credit card.
+- [x] Show own user.
+- [x] Update own user.
+- [x] Add credit cards for own user.
+- [x] Show own credit cards.
+- [x] Show a single own credit card.
+- [x] Update own credit card.
+- [x] Delete own credit card.
 
 Admin features:
-
-[x] Show all users.
-[x] Show any user.
-[x] Update any user.
-[x] Show all credit cards.
-[x] Show any credit card.
-[x] Update any credit card.
+- [x] Show all users.
+- [x] Show any user.
+- [x] Update any user.
+- [x] Show all credit cards.
+- [x] Show any credit card.
+- [x] Update any credit card.
 
 Aditional features:
+- [x] Show all locations.
+- [x] Show all banks.
 
-[x] Show all locations.
-[x] Show all banks.
 ## Technologies
 This project is created with:
 
@@ -57,4 +55,4 @@ For more information about dependencies, please go to the Gemfile
 * To start the rails server locally, run the command "rails server"
 
 ## API calls
-If you want more information about how to call the API, this is the postman repository:
+If you want more information about how to call the API, this is the postman repository: https://www.getpostman.com/collections/07073bb50fc74a26a80f go to the postman app and import the collection with the link.
