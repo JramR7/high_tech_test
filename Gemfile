@@ -10,7 +10,7 @@ gem 'sqlite3'
 # Serializers for data retrieving
 gem 'active_model_serializers'
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 # Use knock for token authentication
